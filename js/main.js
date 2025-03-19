@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 card.style.transition = '';
             });
 
-            // Remove navigation
             const nav = document.querySelector('.slider-navigation');
             if (nav) nav.remove();
         }
