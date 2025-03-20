@@ -181,7 +181,9 @@ input:focus::-webkit-input-placeholder {
 }
 
 .membership-plans {
-  background-color: #111827;
+  background: #070716 url("../images/icon-background.svg");
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
 }
 
@@ -496,12 +498,21 @@ input:focus::-webkit-input-placeholder {
   }
 }
 .video {
-  background-color: #111827;
   color: #ffffff;
   overflow: hidden;
   position: relative;
+  box-sizing: border-box;
+  backdrop-filter: blur(100px);
+  background: linear-gradient(
+    to right,
+    #0a0e24 0%,
+    #0c1029 20%,
+    #10122e 40%,
+    #161338 60%,
+    #1c1542 80%,
+    #21174b 100%
+  );
 }
-
 .video__container {
   max-width: 1180px;
   margin: 0 auto;
@@ -835,10 +846,26 @@ input:focus::-webkit-input-placeholder {
 }
 
 .footer {
-  background-color: #111827;
+  background: linear-gradient(to bottom, #0a0f24, #0a2435);
+  position: relative;
+  overflow: hidden;
   color: #ffffff;
 }
-
+.glow {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 188, 171, 0.3) 0%,
+    rgba(0, 60, 80, 0.1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: blur(30px);
+}
 .footer__section {
   max-width: 1180px;
   margin: 0 auto;
